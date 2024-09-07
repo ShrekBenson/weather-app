@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg" href="./assets/img/logo.svg">
+  <title>Weather City</title>
+</head>
+<body>
+  <header>
+    <h1>City<span>|</span>Weather</h1>
+    <img src="./assets/img/logo.svg" alt="City Weather">
+  </header>
+  
+  <div class="content">
+    <div class="search-row">
+      <div class="search-row__box">
+        <input type="search" id="searchCity" placeholder="Search your city" class="search-row__input" data-save="guadalajara">
+        <button id="searchButton" type="button" class="search-row__button" data-format="metric">
+          <img src="./assets/icons/search.svg" alt="Search city">
+        </button>
+      </div>
+    </div>
+
+    <div class="data-row">
+      <div class="city-data">
+        <h2 id="cityName" class="city-data__name"></h2>
+
+        <div class="temperature-data">
+          <img id="weatherConditionIcon" alt="Weather conditions">
+          
+          <h2 id="cityTemperature">27</h2>
+
+          <div class="temperature-data__formats">
+            <span class="grade-symbol">°</span>
+            <button id="celsiusFormat" class="format-selected" value="metric">C</button>
+            <span>|</span>
+            <button id="farenheitFormat" class="" value="us">F</button>
+          </div>
+        </div>
+
+        <div class="general-data">
+          <ul>
+            <li class="general-data__field">
+              <p>Thermal sensation: <span id="thermalSensation">28°c</span></p>
+            </li>
+            <li class="general-data__field">
+              <p>Precipitation probability: <span id="probPrecipitation">11%</span></p>
+            </li>
+            <li class="general-data__field">
+              <p>Humidity: <span id="humidity">54%</span></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="time-data">
+        <h2 id="weatherCondition" class="time-data__condition"></h2>
+        <p id="dateTime" class="time-data__date"></p>
+        <div class="time-data__days">
+          <div class="weather-day" data-index="0">
+            <h3 class="weather-day__name"></h3>
+            <img src="#" alt="Weather" class="weather-day__icon">
+            <p class="weather-day__temp"></p>
+          </div>
+          <div class="weather-day" data-index="1">
+            <h3 class="weather-day__name"></h3>
+            <img src="#" alt="Weather" class="weather-day__icon">
+            <p class="weather-day__temp"></p>
+          </div>
+          <div class="weather-day" data-index="2">
+            <h3 class="weather-day__name"></h3>
+            <img src="#" alt="Weather" class="weather-day__icon">
+            <p class="weather-day__temp"></p>
+          </div>
+          <div class="weather-day" data-index="3">
+            <h3 class="weather-day__name"></h3>
+            <img src="#" alt="Weather" class="weather-day__icon">
+            <p class="weather-day__temp"></p>
+          </div>
+          <div class="weather-day" data-index="4">
+            <h3 class="weather-day__name"></h3>
+            <img src="#" alt="Weather" class="weather-day__icon">
+            <p class="weather-day__temp"></p>
+          </div>
+          <div class="weather-day" data-index="5">
+            <h3 class="weather-day__name"></h3>
+            <img src="#" alt="Weather" class="weather-day__icon">
+            <p class="weather-day__temp"></p>
+          </div>
+          <div class="weather-day" data-index="6">
+            <h3 class="weather-day__name"></h3>
+            <img src="#" alt="Weather" class="weather-day__icon">
+            <p class="weather-day__temp"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="data-table">
+      <table id="dataWeek" class="week">
+        <thead class="week__head">
+          <tr>
+            <th>Day</th>
+            <th>Precipitation prob.</th>
+            <th>Max. temperature</th>
+            <th>Min. temperature</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody class="week__body">
+          <tr class="info-day">
+            <th class="info-day__name"></th>
+            <td class="info-day__preprob"></td>
+            <td class="info-day__tempmax"></td>
+            <td class="info-day__tempmin"></td>
+            <td class="info-day__description"></td>
+          </tr>
+          <tr class="info-day">
+            <th class="info-day__name"></th>
+            <td class="info-day__preprob"></td>
+            <td class="info-day__tempmax"></td>
+            <td class="info-day__tempmin"></td>
+            <td class="info-day__description"></td>
+          </tr>
+          <tr class="info-day">
+            <th class="info-day__name"></th>
+            <td class="info-day__preprob"></td>
+            <td class="info-day__tempmax"></td>
+            <td class="info-day__tempmin"></td>
+            <td class="info-day__description"></td>
+          </tr>
+          <tr class="info-day">
+            <th class="info-day__name"></th>
+            <td class="info-day__preprob"></td>
+            <td class="info-day__tempmax"></td>
+            <td class="info-day__tempmin"></td>
+            <td class="info-day__description"></td>
+          </tr>
+          <tr class="info-day">
+            <th class="info-day__name"></th>
+            <td class="info-day__preprob"></td>
+            <td class="info-day__tempmax"></td>
+            <td class="info-day__tempmin"></td>
+            <td class="info-day__description"></td>
+          </tr>
+          <tr class="info-day">
+            <th class="info-day__name"></th>
+            <td class="info-day__preprob"></td>
+            <td class="info-day__tempmax"></td>
+            <td class="info-day__tempmin"></td>
+            <td class="info-day__description"></td>
+          </tr>
+          <tr class="info-day">
+            <th class="info-day__name"></th>
+            <td class="info-day__preprob"></td>
+            <td class="info-day__tempmax"></td>
+            <td class="info-day__tempmin"></td>
+            <td class="info-day__description"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+.data-row {
+  display: flex;  
+  height: 300px;
+  padding: 0 15%;
+  border-bottom: 2px solid #00000005;  
+}
+
+.city-data,
+.time-data {
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;  
+  height: inherit;
+}
+
+.city-data {
+  min-width: 500px;
+}
+
+.time-data {
+  flex: 1;
+  row-gap: 16px;
+  overflow-x: auto;
+}
+
+#cityName {
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.temperature-data {
+  display: flex;
+  column-gap: 16px;;
+  height: 100px;
+}
+
+.temperature-data img {
+  height: 80%;
+}
+
+#cityTemperature,
+.temperature-data__formats span,
+.temperature-data__formats button {
+  color: var(--secundary-color);
+  font-family: 'Poppins';
+}
+
+#cityTemperature {
+  text-align: start;
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.temperature-data__formats {
+  display: flex;
+  justify-self: start;
+  align-items: start;
+  column-gap: 0;  
+}
+
+.temperature-data__formats span,
+.temperature-data__formats button {
+  font-size: 2.5rem;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.temperature-data__formats .grade-symbol {
+  font-weight: 300;
+}
+
+.temperature-data__formats button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.temperature-data__formats button.format-selected {
+  font-weight: 300;
+}
+
+.general-data__field p{
+  font-family: 'Poppins';
+  font-size: .875rem;
+  font-weight: 300;
+  color: #00000090;
+}
+
+.general-data__field span {
+  color: var(--main-color);
+}
+
+.time-data__condition,
+.time-data__date {
+  font-family: 'Poppins';
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--main-color);
+}
+
+.time-data__condition {  
+  font-weight: 500;
+}
+
+.time-data__date {
+  font-weight: 200;
+}
+
+.time-data__days {
+  display: flex;
+  height: 100px;
+}
+
+.weather-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;  
+  width: 120px;
+  max-height: inherit;
+  overflow-y: hidden;
+}
+
+.weather-day__name,
+.weather-day__temp {
+  font-family: 'Poppins';
+  line-height: 1;
+}
+
+.weather-day__name {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.weather-day__temp {
+  font-size: .875rem;
+  font-weight: 200;
+}
+
+.weather-day__icon {
+  height: 50%;
+  width: 50%;
+}
